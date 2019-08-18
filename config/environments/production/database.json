@@ -1,0 +1,22 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "revival": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "postgres",
+        "host": "studentrevival.cnsmst5yamos.ap-southeast-1.rds.amazonaws.com",
+        "port": 5432,
+        "srv": "false",
+        "database": "revival",
+        "username": "wahyuha",
+        "password": "wahyuha7!",
+        "ssl": "false"
+      },
+      "options": {
+        "ssl": "false",
+        "authenticationDatabase": ""
+      }
+    }
+  }
+}

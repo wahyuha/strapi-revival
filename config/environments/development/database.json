@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "pg",
+        "database": "revival",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "username": "wahyu",
+        "password": "strapi7",
+        "enabled": true,
+        "defaultConnection": "default"
+      },
+      "options": {}
+    }
+  }
+}
