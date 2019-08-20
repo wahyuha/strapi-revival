@@ -1,0 +1,102 @@
+{
+  "connection": "default",
+  "collectionName": "universities",
+  "info": {
+    "name": "university",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "address": {
+      "type": "string"
+    },
+    "coordinates": {
+      "maxLength": 30,
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "maxLength": 20,
+      "type": "string"
+    },
+    "phone_2": {
+      "maxLength": 20,
+      "type": "string"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "website": {
+      "maxLength": 50,
+      "type": "string"
+    },
+    "sub_district": {
+      "maxLength": 50,
+      "type": "string"
+    },
+    "city": {
+      "maxLength": 50,
+      "type": "string"
+    },
+    "province": {
+      "maxLength": 50,
+      "type": "string"
+    },
+    "accredited": {
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "type": "enumeration"
+    },
+    "expense": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ],
+      "type": "enumeration"
+    },
+    "alias": {
+      "type": "string"
+    },
+    "announcement": {
+      "type": "string"
+    },
+    "facilities": {
+      "collection": "facility",
+      "via": "universities",
+      "dominant": true
+    },
+    "faculties": {
+      "collection": "faculty",
+      "via": "universities",
+      "dominant": true
+    },
+    "country": {
+      "model": "country",
+      "via": "universities"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

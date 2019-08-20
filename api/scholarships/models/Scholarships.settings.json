@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "scholarships",
+  "info": {
+    "name": "scholarships",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

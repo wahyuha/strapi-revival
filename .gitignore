@@ -112,3 +112,5 @@ exports
 build
 
 .env
+config
+
